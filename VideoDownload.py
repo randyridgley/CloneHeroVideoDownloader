@@ -36,8 +36,7 @@ with tqdm(total=i,unit="videos") as pbar:
 			ydl_opts = {'outtmpl': 'video.mp4',
 					'nooverwrites': 0,
 					'noplaylist': 1,
-					'quiet': True,
-					'format': "bestvideo[ext=mp4]"}
+					'quiet': True}
 			with yt_dlp.YoutubeDL(ydl_opts) as ydl:
 				ydl.download([url])
 
