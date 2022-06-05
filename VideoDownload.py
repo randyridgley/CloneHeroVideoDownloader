@@ -34,6 +34,7 @@ with tqdm(total=i,unit="videos") as pbar:
 
 			# downloads the song
 			ydl_opts = {'outtmpl': 'video.mp4',
+					'format': 'mp4',
 					'nooverwrites': 0,
 					'noplaylist': 1,
 					'quiet': True}
