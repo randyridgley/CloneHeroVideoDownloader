@@ -1,3 +1,4 @@
+import configparser
 import glob
 import os
 import time
@@ -40,5 +41,13 @@ with tqdm(total=i,unit="videos") as pbar:
 					'quiet': True}
 			with yt_dlp.YoutubeDL(ydl_opts) as ydl:
 				ydl.download([url])
+
+			# change the song.ini file to attempt to sync the video
+			config = configparser.ConfigParser()
+			config.read('song.ini')
+			config.set('song', 'video_start_time', '-3000')
+
+			with open('song.ini', 'w') as configfile:
+				config.write(configfile)
 
 			clean_cookie()
