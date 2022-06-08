@@ -1,4 +1,4 @@
-<img src="https://github.com/jshackles/CloneHeroVideoDownloader/raw/master/assets/icon.png" width="32" height="32" style="margin-right:5px;"></img>Clone Hero Video Downloader
+<img src="https://github.com/jshackles/CloneHeroVideoDownloader/raw/master/assets/icon.png" width="32" height="32"></img> Clone Hero Video Downloader
 ===========
 An application that allows you to download the top YouTube music video for songs in your Clone Hero library.
 
