@@ -51,3 +51,5 @@ with tqdm(total=i,unit="videos") as pbar:
 				config.write(configfile)
 
 			clean_cookie()
+
+input("Video download complete.  Press Enter to exit.")
